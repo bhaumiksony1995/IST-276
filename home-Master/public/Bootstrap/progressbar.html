@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Demonstrations</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+    .navbar-inverse {
+        background-color: #363F45;
+        border-color: #363F45;
+    }
+
+
+    .btn-group-justified,
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:active
+        .btn-primary:visited,
+        .btn-primary:focus{
+            background-color: #FEB41C;
+            border-color: #FEB41C;
+        }
+
+    .container-authors{
+        margin-top: 200px;
+    }
+
+
+    .jumbotron {
+        background-color: #5E7C88;
+        color: white;
+    }
+
+    h1, body, p, h2 {
+        font-family: 'Arvo', serif;
+        color: white;
+    }
+
+    body {
+        background-color: #363F45;
+        color: white;
+    }
+    
+    .progress.active, .progress-bar {
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+    
+    .container-authors{
+            margin-top: 200px;
+        }
+
+           .modal-content {
+            background-color: #24221F;
+            width: 900px;
+            margin-left: -150px;
+        }
+    
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/Bootstrap/index.html">Bootstrap Demos</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/Bootstrap/index.html">Home</a></li>
+            <li><a href="/Bootstrap/progressbar.html">Progress Bar</a></li>
+            <li><a href="/Bootstrap/buttons.html">Buttons</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="text-center">Progress Bars!!</h1> 
+  </div>
+</div>
+
+<div class="container">
+<h2> Default Progress Bar </h2>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<h2> Striped Progress Bar </h2>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<h2> Stacked Progress Bar </h2>
+    <div class = "progress">
+        <div class = "progress-bar progress-bar-success" role = "progressbar" 
+            aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style = "width: 40%;">
+            <span class = "sr-only">40% Complete</span>
+        </div>
+   
+        <div class = "progress-bar progress-bar-info" role = "progressbar" 
+            aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style = "width: 30%;">
+            <span class = "sr-only">30% Complete (info)</span>
+        </div>
+   
+        <div class = "progress-bar progress-bar-warning" role = "progressbar" 
+            aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style = "width: 20%;">
+            <span class = "sr-only">20%Complete (warning)</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<h2> Active Striped Progress Bar </h2>
+    <div id="loader" class="col-xs-12 col-sm-12 progress-container">
+        <div class="progress progress-striped active">
+            <div class="bar progress-bar progress-bar-success" style="width:0%"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-authors">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Source Code</button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Page Code</h4>
+                </div>
+                <div class="modal-body">
+                    <xmp>
+  <div class="container">
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" 
+    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+  
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" 
+    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+  
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" 
+    role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" 
+    role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar"
+        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40% Complete
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="loader" class="col-xs-12 col-sm-12 progress-container">
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-success" style="width:0%"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<div class = "progress">
+   <div class = "progress-bar progress-bar-success" role = "progressbar" 
+      aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style = "width: 40%;">
+      <span class = "sr-only">40% Complete</span>
+   </div>
+   
+   <div class = "progress-bar progress-bar-info" role = "progressbar" 
+      aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style = "width: 30%;">
+      <span class = "sr-only">30% Complete (info)</span>
+   </div>
+   
+   <div class = "progress-bar progress-bar-warning" role = "progressbar" 
+      aria-valuenow = "60" aria-valuemin = "0" aria-valuemax = "100" style = "width: 20%;">
+      <span class = "sr-only">20%Complete (warning)</span>
+   </div>
+</div>
+</div>
+                    </xmp>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button id="modal2" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"> CSS Code</button>
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Page Code</h4>
+                </div>
+                <div class="modal-body">
+                    <xmp>
+    <style>
+    .navbar-inverse {
+        background-color: #363F45;
+        border-color: #363F45;
+    }
+
+
+    .btn-group-justified,
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:active
+        .btn-primary:visited,
+        .btn-primary:focus{
+            background-color: #FEB41C;
+            border-color: #FEB41C;
+        }
+
+    .container-authors{
+        margin-top: 200px;
+    }
+
+
+    .jumbotron {
+        background-color: #5E7C88;
+        color: white;
+    }
+
+    h1, body, p, h2 {
+        font-family: 'Arvo', serif;
+        color: white;
+    }
+
+    body {
+        background-color: #363F45;
+        color: white;
+    }
+    
+    .progress.active, .progress-bar {
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+    
+    .container-authors{
+            margin-top: 200px;
+        }
+
+    .modal-content {
+            background-color: #24221F;
+            width: 900px;
+            margin-left: -150px;
+    }
+    
+    </style>
+                    </xmp>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+$("#loader .progress-bar").animate({
+width: "100%"
+}, 3500);
+var loader = setInterval(function() {
+var $bar = $('.bar');
+if ($bar.width()==100) {
+clearInterval(progress);
+$('.progress').removeClass('active');
+} 
+else {
+$bar.width($bar.width()+10);
+}
+$bar.text($bar.width()/1 + "%");
+}, 300);
+</script>
+</html>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Weather Page</title>
+</head>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+    #mb {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 60em;
+        height: 30em;
+        margin-top: -15em; /*set to a negative number 1/2 of your height*/
+        margin-left: -30em;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        background-color: lightblue;
+    }
+
+    body {
+        background: url("../images/clouds.gif");
+    }
+
+    #butn{
+        align-content: center;
+        margin-bottom: 18px;
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 2px;
+        font-size: 0.9em;
+        background-color: #eeeeee;
+        color: #646464;
+        transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0.2s;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        padding: 1px;
+    }
+
+    #weatherdata {
+        align-content: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 1s linear;
+    }
+</style>
+
+<body>
+<div class="container" id="mb">
+    <h2 align="center">Bhaumik's JSON Weather Station</h2>
+    <br>
+    <div style="text-align: center">
+        <button id="butn" type="button" class="btn btn-default" onclick="getLocation()">
+            <div id="center">
+                Click for weather
+            </div>
+        </button>
+    </div>
+<div id="weatherdata" class="list-group"></div>
+<div id="json"></div>
+</div>
+</body>
+
+<script>
+    var lat;
+    var long;
+    var url;
+
+    var button = document.getElementById("weatherdata");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            document.getElementById("weatherdata").innerHTML = ""
+            button.style.opacity = 0;
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        lat = position.coords.latitude;
+        long = position.coords.longitude;
+        url = "http://forecast.weather.gov/MapClick.php?lat=" + lat + "&lon=" + long + "&FcstType=json";
+
+        $.getJSON(url, function (data) {
+            $("#fetchButton").hide();
+            $("#weatherdata").append('<img src="http://forecast.weather.gov/newimages/medium/' + data.currentobservation.Weatherimage + '">' +
+                    '<br>' + 'It is currently ' + data.currentobservation.Temp + ' degrees at ' + data.currentobservation.name + ' as of ' + data.currentobservation.Date +
+                    ' with winds of ' + data.currentobservation.Winds + ' mph at a gust of ' + data.currentobservation.Gust + ' mph with ' +
+                    data.currentobservation.Weather + ' Weather.');
+
+            button.style.opacity= 1;
+
+        });
+    }
+
+    function showError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Bhaumik Sony's Weather Station</title>
+<script type="text/javascript">
+navigator.sayswho= (function(){
+    var ua= navigator.userAgent, tem,
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return 'IE '+(tem[1] || '');
+    }
+    if(M[1]=== 'Chrome'){
+        tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+        if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+    }
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    return M.join(' ');
+})();
+
+function turnAllLightsOff()
+{
+	document.getElementById('light1').src="../images/Off.png";
+	document.getElementById('light2').src="../images/Off.png";
+	document.getElementById('light3').src="../images/Off.png";
+	document.getElementById('light4').src="../images/Off.png";
+}
+
+function Switchforecast(theLightID)
+{
+	turnAllLightsOff();
+	currentLightID=theLightID;
+	document.getElementById('loadimg').style="left: 0px; top: 0px; width: 414px; height: 335px;"
+	document.getElementById('loadimg').src="http://i.cdn.turner.com/cnn/.element/img/3.0/weather/maps/namerica_forecast.jpg"
+	document.getElementById(currentLightID).src="../images/On.png";
+}
+
+function Switchradar(theLightID)
+{
+	turnAllLightsOff();
+	currentLightID=theLightID;
+	document.getElementById('loadimg').style="left: 0px; top: 0px; width: 414px; height: 335px;"
+	document.getElementById('loadimg').src="http://i.cdn.turner.com/cnn/.element/img/3.0/weather/maps/nxrd_ga_.gif"
+	document.getElementById(currentLightID).src="../images/On.png";
+}
+
+function Switchsat(theLightID)
+{
+	turnAllLightsOff();
+	currentLightID=theLightID;
+	document.getElementById('loadimg').style="left: 0px; top: 0px; width: 414px; height: 335px;"
+	document.getElementById('loadimg').src="http://i.cdn.turner.com/cnn/.element/img/3.0/weather/maps/satga_.gif"
+	document.getElementById(currentLightID).src="../images/On.png";
+}
+
+function Switchtemp(theLightID)
+{
+	turnAllLightsOff();
+	currentLightID=theLightID;
+	document.getElementById('loadimg').style="left: 0px; top: 0px; width: 414px; height: 335px;"
+	document.getElementById('loadimg').src="http://i.cdn.turner.com/cnn/.element/img/3.0/weather/maps/namerica_highs.jpg"
+	document.getElementById(currentLightID).src="../images/On.png";
+}
+</script>
+
+<script> 
+var browswer = navigator.sayswho;
+if (browswer == "Chrome 49") {
+    document.writeln('<body style="color:#FF6600">');}
+else if (broswer == "MSIE 9") {
+    document.writeln('<body style="color:#00FF00">');}
+else if (broswer == "Firefox 45") {
+    document.writeln('<body style="color:#FF0000">');}
+else {
+    document.writeln('<body style="color:#0000FF">');}
+</script>
+
+<style>
+#header {
+    text-align: center;
+}
+
+#outerwindow {
+    background-image: url('../images/window.png');
+    width: 662px;
+    height: 466px;
+    margin: 0 auto;
+    postition: absolute;
+    z-index= 2;
+}
+
+#innerwindow {
+    top: 160px;
+    left: 450px;
+    width: 414px;
+    height: 335px;
+    margin: 0 auto;
+    text-align: center;
+    z-index= 1;
+    position: fixed;
+}
+
+#loadimg {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+#forecast {
+    margin-left: 155px;
+    margin-top: 435px;
+}
+
+#radar {
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+#sat {
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+#temp {
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+.button {
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.onoff {
+    width: 70px;
+    height: 70px;
+}
+
+#lights {
+    position: absolute;
+    left: 465px;
+}
+
+#light2 {
+    margin-left: 28px;
+}
+
+#light3 {
+    margin-left: 22px;
+}
+
+#light4 {
+    margin-left: 43px;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1> BPS Weather Station </h1>
+</div>
+
+<div style="text-align: center;">
+<script type="text/javascript">
+var now = new Date();
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+function fourdigits(number) {
+return (number < 1000) ? number + 1900 : number;
+}
+today = days[now.getDay()] + ", " +
+months[now.getMonth()] + " " +
+date + ", " +
+(fourdigits(now.getYear())) ;
+document.write(today);
+</script>
+</div>
+
+<div id="outerwindow">
+    <div id="innerwindow">
+    <img id="loadimg" src="../images/weatherloading.gif"/>
+</div>
+    <button class="button" id="forecast" onclick="location.href='http://www.merriam-webster.com/dictionary/forecast';" onmouseover="Switchforecast('light1');"><span>Forecast</span></button>
+    <button class="button" id="radar" onclick="location.href='http://www.merriam-webster.com/dictionary/radar';" onmouseover="Switchradar('light2');"><span>Radar</span></button>
+    <button class="button" id="sat" onclick="location.href='http://www.merriam-webster.com/dictionary/satellite';" onmouseover="Switchsat('light3');"><span>Satelite</span></button>
+    <button class="button" id="temp" onclick="location.href='http://www.merriam-webster.com/dictionary/temperature';" onmouseover="Switchtemp('light4');"><span>Temperature</span></button>
+</div>
+<div id="lights">
+<img class="onoff" id="light1" src="../images/Off.png" alt="The light">
+<img class="onoff" id="light2" src="../images/Off.png" alt="The light">
+<img class="onoff" id="light3" src="../images/Off.png" alt="The light">
+<img class="onoff" id="light4" src="../images/Off.png" alt="The light">
+</div>
+</body>
+<script>
+var currentTime = new Date().getHours();
+    if (6 <= currentTime && currentTime < 18) {
+        if (document.body) {
+            document.body.background = "../images/daytime.png";
+            document.body.style.background = "background-size:cover;";
+        }
+    }
+    else {
+        if (document.body) {
+            document.body.background = "../images/nighttime.png";
+            document.body.style.background = "background-size:cover;";
+        }
+    }
+    </script>
+</html>

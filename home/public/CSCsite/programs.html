@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <title>Mercer University Computer Science</title>
+
+    <style>
+        #intro {
+            align-content: center;
+            text-align: center;
+            background-color: white;
+
+        }
+
+        #navcolor, #navbuttons {
+            background-color: #FD7014;
+            color: white;
+            font-family: "Lucida Calligraphy";
+        }
+
+        #bearpic {
+            max-height: 260px;
+        }
+
+        #about {
+            align-content: center;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            background-color: white;
+            padding: 25px;
+        }
+
+        body {
+            background: #eeeded;
+            position: relative;
+        }
+
+        #csbs, #csba, #csm {
+            margin-top: 20px;
+            text-align: left;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            background-color: white;
+            padding: 25px;
+            margin-left: 100px;
+        }
+
+        ul.nav-pills {
+            left: 30px;
+            float: left;
+            position: fixed;
+        }
+
+        .col-sm-9 {
+            margin-right: 100px;
+        }
+
+        #csrelated, #math, #other {
+            float: left;
+            margin: 20px;
+        }
+
+        #csm{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="5">
+
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navcolor">
+        <div>
+            <ul class="nav navbar-nav" id="navbuttons">
+                <li class="nav-item" >
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faculty.html">Faculty/Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programs.html">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="organizations.html">Organizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="morelinks.html">More Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="jumbotron" id="intro">
+    <div class="container">
+        <img src="pics/bearDayBear.png" id="bearpic">
+        <h3>Department of Computer Science</h3>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <nav class="col-sm-3" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#csbs">Computer Science Bachelor of Science</a></li>
+                <li><a href="#csba">Computer Science Bachelor of Art</a></li>
+                <li><a href="#csm">Computer Science Minor</a></li>
+            </ul>
+        </nav>
+
+        <div class="col-sm-9">
+            <div class="container" id="csbs">
+                <h4 align="center">Computer Science Bachelor of Science</h4>
+                <br>
+                <p align="center">The Computer Science B.S. program contains a breadth of exposure to segments
+                    of the disipline. It properly prepares students to obtain employment as a
+                    computer science professional.</p>
+                <br>
+
+                <div id="csrelated">
+                    <b>Computer Science Required Courses (31 Hours):</b>
+
+                    <p>CSC204: Programming I</p>
+
+                    <p>CSC205: Programming II</p>
+
+                    <p>CSC245: Data Structures and Algorithms</p>
+
+                    <p>CSC322: Computer Organization and Assembly Language</p>
+
+                    <p>CSC323: Computer Organization and Logic Design</p>
+
+                    <p>CSC330: Organization of Programming Languages</p>
+
+                    <p>CSC340: Introduction to the Theory of Computing</p>
+
+                    <p>CSC460: Operating Systems</p>
+
+                    <p>CSC480: Software Engineering</p>
+                </div>
+
+                <div id="math">
+                    <b>Mathematics (15 Hours):</b>
+
+                    <p>MAT191: Calculus I</p>
+
+                    <p>MAT192: Calculus II</p>
+
+                    <p>MAT225: Discrete Mathematics</p>
+
+                    <p>MAT320: Probability and Statistics</p>
+
+                </div>
+
+                <div id="other">
+                    <b>One course from each of the following groups (12 hours):</b>
+
+                    <p>- CSC310: Introduction to File Structures or
+                         CSC312: Database Systems</p>
+
+                    <p>- CSC324: Digital System Design or
+                         CSC360: Theory of Data Communications</p>
+
+                    <p>- CSC380: Artificial Intelligence or
+                         CSC450: Compiler Construction</p>
+
+                    <p>One additional 3 hour CSC course numbered 310 or above
+                        (May select a 2nd course from above)</p>
+                </div>
+
+            </div>
+
+            <div class="container" id="csba">
+                <h4 align="center">Computer Science Bachelor of Arts</h4>
+                <br>
+                <p>
+                    The Computer Science B.A. program is appropriate for students who have
+                    an interest in computer science but wish to pursue another major as well.
+                </p>
+
+                <div id="csrelated">
+                    <b>Computer Science Required Courses (31 Hours):</b>
+
+                    <p>CSC204: Programming I</p>
+
+                    <p>CSC205: Programming II</p>
+
+                    <p>CSC245: Data Structures and Algorithms</p>
+
+                    <p>CSC322: Computer Organization and Assembly Language</p>
+
+                    <p>At least 12 hours of additional CSC courses numbered 310 or above. <br>
+                        No more than a total of 4 of these credits may come from CSC 485 and
+                        CSC 499 and only with prior approval by the department.</p>
+                </div>
+
+                <div id="math">
+                    <b>Mathematics (15 Hours):</b>
+
+                    <p>MAT191: Calculus I</p>
+
+                    <p>MAT192: Calculus II</p>
+
+                    <p>MAT225: Discrete Mathematics</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="container" id="csm">
+                <h4 align="center">Computer Science Minor</h4>
+                <br>
+                <p>
+                    The Computer Science minor is appropriate for students with an interest in
+                    computer science but prefer to major in another field.
+                </p>
+
+                <div id="csrelated">
+                    <b>Computer Science Required Courses (31 Hours):</b>
+
+                    <p>CSC204: Programming I</p>
+
+                    <p>CSC205: Programming II</p>
+
+                    <b>Computer Science electives (9 hours):</b>
+                    <p>3 CSC courses selected from CSC 245 and/or
+                        <br>
+                    courses numbered 310 and above</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="admin"></div>1400 Coleman Avenue<br />
+    Macon, GA 31207<br />
+    (478) 301-2823 <br />
+    <a href="mailto:cozart_dl@mercer.edu" class="foot">cozart_dl@mercer.edu</a>
+</div>
+</body>
+</html>

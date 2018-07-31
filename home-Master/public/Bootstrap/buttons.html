@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Demonstrations</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+
+    .navbar-inverse {
+        background-color: #363F45;
+        border-color: #363F45;
+    }
+    
+    .jumbotron {
+        background-color: #5E7C88;
+        color: white;
+    }
+
+    h1, body, p, h2 {
+        font-family: 'Arvo', serif;
+        color: white;
+    }
+
+    body {
+        background-color: #363F45;
+        color: white;
+    }
+
+    .btn-group-justified,
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:active
+        .btn-primary:visited,
+        .btn-primary:focus{
+            background-color: #FEB41C;
+            border-color: #FEB41C;
+
+
+        }
+
+        .container-authors{
+            margin-top: 200px;
+        }
+
+           .modal-content {
+            background-color: #24221F;
+            width: 900px;
+            margin-left: -150px;
+        }
+
+        .container-two{
+            
+        }
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/Bootstrap/index.html">Bootstrap Demos</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/Bootstrap/index.html">Home</a></li>
+            <li><a href="/Bootstrap/progressbar.html">Progress Bar</a></li>
+            <li><a href="/Bootstrap/buttons.html">Buttons</a></li>
+        </ul>
+    </div>
+</nav>
+    
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center">Buttons!!</h1>
+    </div>
+</div>
+    
+<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>    
+  <button type="button" class="btn btn-default disabled"> OUT OF SERVICE </button>
+</div>
+
+
+
+
+<div class="container container-authors">
+    <button id="modal1" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Source Code</button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Page Code</h4>
+                </div>
+                <div class="modal-body">
+                    <xmp>
+                    <div class="container">
+                      <h2>Button Styles</h2>
+                      <button type="button" class="btn btn-default">Default</button>
+                      <button type="button" class="btn btn-primary">Primary</button>
+                      <button type="button" class="btn btn-success">Success</button>
+                      <button type="button" class="btn btn-info">Info</button>
+                      <button type="button" class="btn btn-warning">Warning</button>
+                      <button type="button" class="btn btn-danger">Danger</button>
+                      <button type="button" class="btn btn-link">Link</button>    
+                      <button type="button" class="btn btn-default disabled"> OUT OF SERVICE </button>
+                    </div>
+                    </xmp>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button id="modal2" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"> CSS Code</button>
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Page Code</h4>
+                </div>
+                <div class="modal-body">
+                    <xmp>
+    <style>
+
+    .navbar-inverse {
+        background-color: #363F45;
+        border-color: #363F45;
+    }
+    
+    .jumbotron {
+        background-color: #5E7C88;
+        color: white;
+    }
+
+    h1, body, p, h2 {
+        font-family: 'Arvo', serif;
+        color: white;
+    }
+
+    body {
+        background-color: #363F45;
+        color: white;
+    }
+
+    .btn-group-justified,
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:active
+        .btn-primary:visited,
+        .btn-primary:focus{
+            background-color: #FEB41C;
+            border-color: #FEB41C;
+
+
+        }
+
+        .container-authors{
+            margin-top: 200px;
+        }
+
+           .modal-content {
+            background-color: #24221F;
+            width: 900px;
+            margin-left: -150px;
+        }
+
+        .container-two{
+            
+        }
+
+        </style>
+                    </xmp>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+</body>
+</html>

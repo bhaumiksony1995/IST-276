@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhaumik's Firebase Links</title>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+<style>
+#first {
+    text-align: center;
+    color: blue;
+}
+
+#second {
+    text-align: center;
+    color: red;
+}
+
+body {
+    font-size: 150%;
+    color: #ff00ff;
+    font-family: "Berkshire Swash";
+    background-image: url('../images/joker.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    }
+        
+.jumbotron {
+    background: rgba(230, 230, 230, 0.5); 
+    font-family: "Pinyon Script";
+    }
+</style>
+</head>
+<body>
+<center>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 id="first">Bhaumik's Firebase Links</h1>
+        <h2 id="second"> Firebase Links </h2>
+    </div>
+</div>
+
+<div id='messagesDiv'> </div>
+<input type='text' id='nameInput' placeholder='Title' style="font-size: 100%; color: #ff6a69; ">
+<input type='text' id='messageInput' placeholder='URL' style="font-size: 100%; color: blue;">
+ 
+<script>
+    var myDataRef = new Firebase('https://incandescent-inferno-3377.firebaseio.com/');
+    $('#messageInput').keypress(function (e) {
+        if (e.keyCode == 13) {
+            var name = $('#nameInput').val();
+            var text = $('#messageInput').val();
+            myDataRef.push({name: name, text: text});
+            $('#messageInput').val('');
+        }
+    });
+    myDataRef.on('child_added', function(snapshot) {
+        var message = snapshot.val();
+        displayChatMessage(message.name, message.text);
+    });
+    function displayChatMessage(name, text) {
+        document.getElementById("messagesDiv").innerHTML = document.getElementById("messagesDiv").innerHTML + " <ul> " + "<a href=" + text + " " + "target ='_blank'>" + name + " </a> " + " </ul> ";
+        document.getElementById("messagesDiv").style.textAlign="center";
+        document.getElementById("messagesDiv").style.fontSize = "xx-large";
+        document.getElementById("messagesDiv").style.color = "#ff00ff";
+    };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IST276 Assignment 4: CSS3 Demonstrations</title>
+<meta charset="UTF-8" />
+<style>
+#title {
+        text-align: center;
+        font-family: Times New Roman;
+}
+#body {
+    color: green;
+}
+
+#header {
+text-align: center;
+background-color: #0099ff;
+height: 100px;
+border-style: groove;
+border-width: 6px;
+border-color: red;
+}
+
+h1, h2{
+    padding: 0px;
+    margin-top: 4px;
+}
+
+#Normal {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#Y {
+	padding-top: 15px;
+	width: 300px;
+	margin-left: auto; margin-right: auto;
+}
+
+#Ytext {
+	text-align: center;
+}
+
+#X {
+        text-align: center;
+	padding-top: 15px;
+}
+
+#MercerBears {
+	width: 300px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#MercerBears1 {
+	width: 300px;
+	-webkit-transform: perspective( 600px ) rotateY( 45deg );
+	border-style: solid;
+        border-width: 1px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#MercerBears2 {
+	    width: 300px;
+        -webkit-transform: perspective( 600px ) rotateX( 45deg );
+        border-style: solid;
+        border-width: 1px;
+}
+
+#stage {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    margin-top: 120px;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s;
+    animation-name: example;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.mainNav {
+    float: left;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+.mainNav ul {
+  list-style: none;
+}
+.mainNav a {
+    background-color: #000099;
+    background-image: linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05)),
+                      linear-gradient(-72deg, hsla(0,0%,100%,.05) 50%, transparent 50%);
+    backface-visibility: hidden;
+    box-shadow: inset 0 0 .25em hsla(0,0%,0%,.1),
+                inset 0 0 1.5em hsla(0,0%,0%,.25);
+    color: #00ff99;
+    display: block;
+    font: bold 1em/3 sans-serif;
+    padding: 0 1.5em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+    transition: .5s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    width: 6em;
+}
+.mainNav a:after {
+    background-color: #6666ff;
+    background-image: linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05)),
+                      linear-gradient(-72deg, hsla(0,0%,100%,.05) 50%, transparent 50%),
+                      linear-gradient(hsla(0,0%,0%,.25), hsla(0,0%,0%,.25));
+    box-shadow: inset 0 0 .25em hsla(0,0%,0%,.2),
+                inset 0 0 1.5em hsla(0,0%,0%,.3);
+    bottom: 0;
+    color: #c6538c;
+    content: attr(data-title);
+    left: 100%;
+    line-height: 3;
+    position: absolute;
+    top: 0;
+    transform: rotateY(90deg);
+    transform-origin: 0 0;
+    width: 100%;
+}
+.mainNav a:before {
+    background-color: #c6538c;
+    background-image: linear-gradient(hsla(0,0%,100%,.07), hsla(0,0%,0%,.07)),
+                      linear-gradient(hsla(0,0%,0%,.5), hsla(0,0%,0%,.5));
+    bottom: 0;
+    content: '';
+    height: 9em;
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transform-origin: 0 0;
+    width: 100%;
+}
+.mainNav li:nth-child(-n+2) a:before {
+    transform: rotateX(-90deg) translateX(-9em) translateZ(3em);
+}
+.mainNav li:nth-child(n+3) a:before {
+    transform: rotateX(-90deg) translateX(-9em);
+}
+.mainNav li:hover a {
+    transform: rotateY(-90deg) translateX(-4.5em) translateZ(4.5em);
+    z-index: 10;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>
+3D Transformations
+</h1>
+<h2>
+Bhaumik Sony, Steve Sanchez
+</h2>
+</div>
+
+<div id="Normal" class="box">
+<img id="MercerBears" src="images/MercerBears.png" alt="MercerBears">
+<li>This is the original image</li>
+</div>
+
+<div id="Y">
+<img id="MercerBears1" src="images/MercerBears.png" alt="MercerBears">
+</div>
+
+<div id="Ytext">
+<li>This is the image rotated on its Y axis by 45 degree.</li>
+</div>
+
+<div id="X">
+<img id="MercerBears2" src="images/MercerBears.png" alt="MercerBears">
+<li>This is the image rotated on its X axis by 45 degrees.</li>
+</div>
+
+<div id="stage">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+
+<nav class="mainNav">
+    <ul>
+        <li><a href="#" data-title="This">This</a></li>
+        <li><a href="#" data-title="Thing">Thing</a></li>
+        <li><a href="#" data-title="Turns">Turns</a></li>
+        <li><a href="#" data-title="Around">Around</a></li>
+        <li><a href="#" data-title="So Cool!">So Cool!</a></li>
+    </ul>
+</nav>
+</body>
+</html>

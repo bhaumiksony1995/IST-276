@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <!--<script type="text/javascript" src="http://www.cs.mercer.edu/template/jquery.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <link rel="StyleSheet" href="http://www.cs.mercer.edu/template/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="http://www.cs.mercer.edu/faculty/main/style.css" />
+    <script type="text/javascript" src="http://www.cs.mercer.edu/template/jquery.js"></script>
+    <script type="text/javascript" src="http://www.cs.mercer.edu/faculty/main/js.js"></script>
+
+    <script>
+        // hljs.initHighlightingOnLoad();
+    </script>
+    <title>Mercer University Computer Science</title>
+
+    <style>
+        #intro{
+            align-content: center;
+            text-align: center;
+            background-color: white;
+
+        }
+        #navcolor, #navbuttons{
+            background-color: #FD7014;
+            color: white;
+        }
+
+        #bearpic{
+            max-height: 260px;
+        }
+
+        #about{
+            align-content: center;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            background-color: white;
+            height: 500px;
+            padding: 25px;
+        }
+
+        body {
+            background: #eeeded;
+        }
+        a:link {
+            color:cornflowerblue;
+            font-style: italic;
+        }
+
+        /* visited link */
+        a:visited {
+            font-family: "Iskoola Pota";
+            color:crimson;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #0000ff;
+            /*font-size: x-large;*/
+            /* font-stretch: extra-expanded;*/
+            font-family: "Lucida Calligraphy";
+        }
+
+        /* selected link */
+        a:active {
+            color:darkcyan;
+            flex-flow: nowrap;
+        }
+        #aboutInfo{
+            /*repeat-x rgb(249,249,249);*/
+            text-align:center;
+            caption-side: top;
+            color: #cc58ff;
+
+            font-size: x-large;
+            font-stretch: ultra-condensed;
+        }
+        #aboutInfo:hover{
+            color:crimson;
+            /*font-size: x-large;*/
+            font-stretch: extra-expanded;
+            font-family: "Lucida Calligraphy";
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navcolor">
+        <div>
+            <ul class="nav navbar-nav" id="navbuttons">
+                <li class="nav-item" >
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="faculty.html">Faculty/Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programs.html">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="organizations.html">Organizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="morelinks.html">More Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="jumbotron" id="intro">
+    <div class="container">
+        <img src="pics/bearDayBear.png" id="bearpic" alt="the bear">
+        <header style="font-size:23px;">Department of Computer Science</header>
+    </div>
+</div>
+<div id="body" style="align-self: center;" class="container">
+    <div id="titlebox">
+        Mercer University Computer Science Faculty
+    </div>
+    <!-- Div that contains all faculty videos-->
+
+    <!-- List of all faculty names -->
+    <div id="names" style="float: right;">
+        <span class="facName" id="t1"> <a href="http://www.cs.mercer.edu/faculty/facMember/?POI=0" target="_blank">Robert Allen</a></span>
+
+        <span class="facName" id="t2"> <a href="http://www.cs.mercer.edu/faculty/facMember?POI=2" target="_blank"> David Cozart</a></span>
+        <span class="facName" id="t3"> <a href="http://www.cs.mercer.edu/faculty/facMember?POI=3" target="_blank"> Felicia Devero </a></span>
+        <span class="facName" id="t4"> <a href="http://www.cs.mercer.edu/faculty/facMember?POI=4" target="_blank"> Andy Digh </a></span>
+        <span class="facName" id="t5"> <a href="http://www.cs.mercer.edu/faculty/facMember?POI=5" target="_blank"> Andy Pounds </a></span>
+        <span class="facName" id="t6"><a href="http://www.cs.mercer.edu/faculty/facMember?POI=9" target="_blank"> Martin Zhao </a></span>
+    </div>
+
+    <!-- About section of faculty main page -->
+    <div id="aboutInfo" style="float: inherit;">
+
+        <br><br>Our Mercer Computer Science Faculty are well versed in a vast array of technological mediums.
+        The faculty are very approachable and can easily find time to meet with students whenever they
+        need assistance on homework or projects. To find out more information about each faculty
+        member, simply click on the faculty member you would like to know more about.
+    </div>
+
+
+    <div id="footer" align="center">
+        <div id="admin"></div>1400 Coleman Avenue<br />
+        Macon, GA 31207<br />
+        (478) 301-2823 <br />
+        <a href="mailto:cozart_dl@mercer.edu" class="foot">cozart_dl@mercer.edu</a>
+    </div>
+    </div>
+    <!--</div>-->
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<title>Mercer University Computer Science</title>
+
+<style>
+#intro{
+    align-content: center;
+    text-align: center;
+    background-color: white;
+
+}
+#navcolor, #navbuttons{
+    background-color: #FD7014;
+    color: white;
+}
+
+   <!-- #bearpic{
+        max-height: 260px;
+    }-->
+
+#about{
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white;
+    height: 500px;
+    padding: 25px;
+}
+
+body {
+    background: #eeeded;
+	align-content: center;
+}
+#DepartmentLinks
+{
+	float:left;
+	width:310px;
+	border-right: 4px ridge #e45c06;
+	height:450px;
+	text-align: center;
+}
+#MercerLinks
+{
+	float:left;
+	width:310px;
+	text-align:center;
+	border-right: 4px ridge #e45c06;
+	height:450px;
+
+}
+#ResourceLinks
+{
+	 text-align:center;
+	float: left;
+	width:310px;
+	height:450px;
+	
+}
+#linkHeaders{
+	width : 938px;
+	height:80px;
+	padding:0px;
+	text-shadow: 1px 1px gray, 1px 1px #333;
+}
+
+#linkHeaders h3
+{
+	padding:0px;
+}
+#DepartmentHead
+{
+	 background-color:#dadada;
+	text-align:center;
+	text-decoration:underline;
+	width:310px;
+	float: left;
+}
+#MercerHead
+{
+	 background-color:#dadada;
+	text-align:center;
+	text-decoration:underline;
+	width : 310px;
+	float:left;
+}
+#ResourcesHead
+{
+	background-color:#dadada;
+	text-align:center;
+	text-decoration:underline;
+	width:310px;
+	float:left;
+}
+#main
+{
+	background-color:#dadada;
+	height:500px;
+	width:940px;
+	color:black;
+	white-space:normal;
+	
+}
+ a:link {
+            color:cornflowerblue;
+            font-style: italic;
+        }
+
+        /* visited link */
+        a:visited {
+            font-family: "Iskoola Pota";
+            color:crimson;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color:#0000ff;
+            /*font-size: x-large;
+            font-stretch: extra-expanded;*/
+            font-family: "Lucida Calligraphy";
+        }
+
+        /* selected link */
+        a:active {
+            color:darkcyan;
+            flex-flow: nowrap;
+        }
+</style>
+</head>
+<div>
+<div class="navbar-wrapper">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navcolor">
+    <div>
+  <ul class="nav navbar-nav" id="navbuttons">
+    <li class="nav-item" >
+        <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item" >
+        <a class="nav-link" href="faculty.html">Faculty/Staff</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="programs.html">Programs</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="organizations.html">Organizations</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="morelinks.html">More Links</a>
+    </li>
+  </ul>
+    </div>
+</nav>
+</div>
+
+<div class="jumbotron" id="intro">
+    <div class="container">
+        <img src="pics/bearDayBear.png" id="bearpic">
+    <h3>Department of Computer Science</h3>
+    </div>
+</div>
+<div id="body" class="container">
+			
+		<!--<div id="titlebox">
+				More Links			
+		</div>-->	
+
+		<div id="linkHeaders">	
+			<div id ="MercerHead" >
+				<h1>Mercer University</h1>
+			</div>
+			<div id ="DepartmentHead">
+					<h1>CS Department</h1>
+			</div>
+			<div id ="ResourcesHead">
+				<h1>Resources</h1>
+			</div>
+		</div>
+<div id ="main">
+		<div id ="MercerLinks">
+				<h3><a href="http://mercer.edu/" target="_blank">Mercer.edu</a></h3>
+				<h3><a href="https://my.mercer.edu/" target="_blank">My Mercer</a></h3>
+				<h3><a href="http://mercerlive.mercer.edu/" target="_blank">Mercer Live</a></h3>
+				<h3><a href="https://bb-mercer.blackboard.com/webapps/login/" target="_blank">Blackboard</a></h3>
+				<h3><a href="http://www2.mercer.edu/NR/rdonlyres/350DD6C3-67B9-4155-A515-88C7E81FEB04/0/10_11Macon.pdf#page=144" target="_blank">Course Catalog</a></h3>
+				<h3><a href="http://www2.mercer.edu/Registrar/Classes/Macon/default.htm" target="_blank">Course Schedules</a></h3>
+				<h3><a href ="http://www2.mercer.edu/Registrar/FinalExams/Macon/default.htm" target="_blank">Exam Schedules</a></h3>
+		</div>
+		<div id ="DepartmentLinks">
+				<h3><a href="http://blackhawk.cs.mercer.edu/courses/" target="_blank">Courses on Blackhawk</a></h3>
+				<h3><a href="http://docs.google.com/" target="_blank">Google Docs</a></h3>
+				<h3><a href="http://camps.cs.mercer.edu/" target="_blank">Summer Camps</a></h3>
+		</div>
+		<div id ="ResourceLinks">
+			<h3><a href="http://docs.oracle.com/javase/6/docs/api/" target="_blank">Java API</a></h3>
+			<h3><a href="http://www.w3schools.com/" target="_blank">W3Schools</a></h3>
+			<h3><a href="http://www.php.net/manual/en/" target="_blank">PHP Manual</a></h3>
+			<h3><a href="http://cplusplus.com/" target="_blank">CPlusPlus.com</a></h3>
+			<h3><a href="http://cppreference.com/" target="_blank">CPP Reference</a></h3>
+			<h3><a href="http://www.sgi.com/tech/stl/" target ="_blank">STL Reference</a></h3>
+			<h3><a href="http://docs.python.org/py3k/" target="_blank">Python Reference</a></h3>
+			<h3><a href="http://ruby-doc.org/" target="_blank">Ruby Manual</a></h3>
+			<h3><a href = "http://msdn.microsoft.com/en-us/vcsharp/default.aspx" target="_blank">C# Reference</a></h3>
+		</div>
+	</div>
+
+			</div>
+			<div id="footer">
+				<div id="admin"></div>1400 Coleman Avenue<br />
+				Macon, GA 31207<br />
+				(478) 301-2823 <br />
+				<a href="mailto:cozart_dl@mercer.edu" class="foot">cozart_dl@mercer.edu</a>
+			</div>	
+		</div>
+
+
+</body>
+</html>

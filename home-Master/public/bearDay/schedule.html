@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+<title>Bear Day 2016</title>
+
+<style>
+.jumbotron {
+    font-family: 'Lobster';
+    font-color: black;
+}
+
+h2 {
+    color: black;
+}
+
+#bearDayPic{
+    align-content: center;
+    height: 275px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bullet1, #bullet2, #bullet3, #bullet4, #bullet5, #bullet6, #bullet7, #bullet8, #bullet9, #bullet10, #bullet11, #bullet12, #bullet13, #bullet14, #bullet15, #bullet16, #bullet17, #bullet18, #bullet19, #bullet20, #bullet21, #bullet22, #bullet23, #bullet24, #bullet25, #bullet26{
+    width: 30px;
+    height: 30px;
+ }
+
+.line {
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Cinzel;
+}
+
+.afterLine {
+    margin-left: 43px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Cinzel;
+}
+
+.myDiv {
+    margin-top: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    background: #3F2860;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 5px;
+    padding: .5em 0 .5em;
+    margin: 0;
+    /*display: none;*/
+}
+
+#first {
+    margin-left: 480px;
+}
+
+#wrapper {
+    text-align: center;
+    position: relative;
+    margin: 10px auto;
+    width: 60%;
+    border: 0.5em solid #FA8B60;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.19);
+    padding: 0%;
+}
+
+.letter-wrapper {
+    width: 5em;
+    height: 5em;
+    display: inline-block;
+    position: relative;
+    margin: .5em 0.1em;
+    padding: 0;
+}
+
+figcaption {
+    display: none;
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.14);
+}
+
+.letter {
+    display: block;
+    margin: 0 auto;
+}
+
+.myHead {
+    font-family: Cinzel Decorative;
+}
+/* LETTER A
+-------------------------------------------------------- */
+
+.a {
+    width: 4em;
+    height: 5em;
+}
+
+.a .bottom,
+.a .top {
+    display: block;
+    width: 4em;
+    height: 100%;
+    position: absolute;
+}
+
+
+/* premier */
+
+.a .bottom:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+
+/* 2e */
+
+.a .bottom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    top: 2em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+
+/* 3e */
+
+.a .top:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0em;
+    height: 4em;
+    border-top: 1em solid transparent;
+    border-right: 1em solid #FA8B60;
+    border-bottom: 0em solid transparent;
+    /*border-image: linear-gradient(to top, #FA8B60, #A45B3F, #FA8B60) 1 100%;*/
+}
+
+
+/* 4e */
+
+.a .top:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0em;
+    width: 0em;
+    height: 4em;
+    border-top: 1em solid transparent;
+    border-left: 1em solid #FA8B60;
+    border-bottom: 0em solid transparent;
+}
+
+
+/* LETTER B
+-------------------------------------------------------- */
+
+.b {
+    width: 4em;
+    height: 5em;
+}
+
+.b .bottom,
+.b .middle,
+.b .top {
+    display: block;
+    width: 4em;
+    height: 100%;
+    position: absolute;
+}
+
+.b .bottom:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.b .bottom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    top: 4em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.b .middle:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    top: 2em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.b .middle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 5em;
+    left: 0em;
+    background: #FA8B60;
+    /*	variant
+    border-top: 0em solid transparent;
+    border-right: 1em solid #FA8B60;
+    border-bottom: 1em solid transparent;
+    */
+}
+
+.b .top:before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0em;
+    width: 0em;
+    height: 1em;
+    border-top: 1em solid transparent;
+    border-left: 1em solid #FA8B60;
+    border-bottom: 1em solid transparent;
+}
+
+.b .top:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0em;
+    width: 0em;
+    height: 1em;
+    bottom: 0;
+    border-top: 0em solid transparent;
+    border-left: 1em solid #FA8B60;
+    border-bottom: 1em solid transparent;
+}
+
+/* LETTER D
+-------------------------------------------------------- */
+
+.d {
+    width: 4em;
+    height: 5em;
+}
+
+.d .bottom,
+.d .top {
+    display: block;
+    width: 4em;
+    height: 100%;
+    position: absolute;
+}
+
+.d .bottom:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.d .bottom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    top: 4em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.d .top:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 5em;
+    background: #FA8B60;
+}
+
+.d .top:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0em;
+    width: 0em;
+    height: 3em;
+    border-top: 1em solid transparent;
+    border-left: 1em solid #FA8B60;
+    border-bottom: 1em solid transparent;
+}
+
+
+/* LETTER E
+-------------------------------------------------------- */
+
+.e {
+    width: 4em;
+    height: 5em;
+}
+
+.e .bottom,
+.e .top {
+    display: block;
+    width: 4em;
+    height: 100%;
+    position: absolute;
+}
+
+.e .bottom:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 3em;
+    height: 1em;
+    left: 1em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60 1em);
+}
+
+.e .bottom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 3em;
+    height: 1em;
+    left: 1em;
+    top: 4em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60 1em);
+}
+
+.e .top:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    top: 2em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60 1em);
+}
+
+.e .top:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0em;
+    height: 3em;
+    border-top: 1em solid transparent;
+    border-right: 1em solid #FA8B60;
+    border-bottom: 1em solid transparent;
+}
+
+/* LETTER R
+-------------------------------------------------------- */
+
+.r {
+    width: 4em;
+    height: 5em;
+}
+
+.r .bottom,
+.r .middle,
+.r .top {
+    display: block;
+    width: 4em;
+    height: 100%;
+    position: absolute;
+}
+
+.r .bottom:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.r .bottom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    left: 1em;
+    top: 2em;
+    background: #FA8B60 linear-gradient( to right, #A45B3F, #FA8B60, #A45B3F);
+}
+
+.r .middle:before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0em;
+    width: 0em;
+    height: 1em;
+    border-top: 1em solid transparent;
+    border-left: 1em solid #FA8B60;
+    border-bottom: 1em solid transparent;
+}
+
+.r .top:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 5em;
+    background: #FA8B60;
+}
+
+.r .top:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0em;
+    width: 0em;
+    height: 1em;
+    bottom: 0;
+    border-top: 1em solid transparent;
+    border-left: 1em solid #FA8B60;
+    border-bottom: 0em solid transparent;
+}
+
+/* LETTER Y
+-------------------------------------------------------- */
+
+.y {
+    width: 4em;
+    height: 5em;
+}
+
+.y .bottom,
+.y .top {
+    display: block;
+    width: 4em;
+    height: 100%;
+    position: absolute;
+}
+
+.y .bottom:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 2em;
+    background: #FA8B60 linear-gradient( to top, #A45B3F, #FA8B60 1em);
+}
+
+.y .bottom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 2em;
+    right: 0;
+    background: #FA8B60 linear-gradient( to top, #A45B3F, #FA8B60 1em);
+}
+
+.y .top:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 2em;
+    left: 1.5em;
+    bottom: 0em;
+    background: #FA8B60 linear-gradient( to bottom, #A45B3F, #FA8B60 1em);
+}
+
+.y .top:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 0em;
+    top: 2em;
+    left: 0em;
+    border-top: 1em solid #FA8B60;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+}
+</style>
+
+    <script>
+        function changeBullet1()
+        {
+            document.getElementById("bullet1").src="arrow.png"
+            document.getElementById("myP").style.textDecoration = "underline";
+            document.getElementById("myP1").style.textDecoration = "underline";
+            document.getElementById("myP2").style.textDecoration = "underline";
+        }
+        function changeBulletBack1()
+        {
+            document.getElementById("bullet1").src="bullet.png"
+            document.getElementById("myP").style.textDecoration = "none";
+            document.getElementById("myP1").style.textDecoration = "none";
+            document.getElementById("myP2").style.textDecoration = "none";
+        }
+
+        function changeBullet2()
+        {
+            document.getElementById("bullet2").src="arrow.png"
+            document.getElementById("myP3").style.textDecoration = "underline";
+            document.getElementById("myP4").style.textDecoration = "underline";
+            document.getElementById("myP5").style.textDecoration = "underline";
+        }
+        function changeBulletBack2()
+        {
+            document.getElementById("bullet2").src="bullet.png"
+            document.getElementById("myP3").style.textDecoration = "none";
+            document.getElementById("myP4").style.textDecoration = "none";
+            document.getElementById("myP5").style.textDecoration = "none";
+        }
+
+        function changeBullet3()
+        {
+            document.getElementById("bullet3").src="arrow.png"
+            document.getElementById("myP6").style.textDecoration = "underline";
+            document.getElementById("myP7").style.textDecoration = "underline";
+            document.getElementById("myP8").style.textDecoration = "underline";
+        }
+        function changeBulletBack3()
+        {
+            document.getElementById("bullet3").src="bullet.png"
+            document.getElementById("myP6").style.textDecoration = "none";
+            document.getElementById("myP7").style.textDecoration = "none";
+            document.getElementById("myP8").style.textDecoration = "none";
+        }
+
+        function changeBullet4()
+        {
+            document.getElementById("bullet4").src="arrow.png"
+            document.getElementById("myP9").style.textDecoration = "underline";
+            document.getElementById("myP10").style.textDecoration = "underline";
+            document.getElementById("myP11").style.textDecoration = "underline";
+        }
+        function changeBulletBack4()
+        {
+            document.getElementById("bullet4").src="bullet.png"
+            document.getElementById("myP9").style.textDecoration = "none";
+            document.getElementById("myP10").style.textDecoration = "none";
+            document.getElementById("myP11").style.textDecoration = "none";
+        }
+
+        function changeBullet5()
+        {
+            document.getElementById("bullet5").src="arrow.png"
+            document.getElementById("myP12").style.textDecoration = "underline";
+            document.getElementById("myP13").style.textDecoration = "underline";
+            document.getElementById("myP14").style.textDecoration = "underline";
+        }
+        function changeBulletBack5()
+        {
+            document.getElementById("bullet5").src="bullet.png"
+            document.getElementById("myP12").style.textDecoration = "none";
+            document.getElementById("myP13").style.textDecoration = "none";
+            document.getElementById("myP14").style.textDecoration = "none";
+        }
+
+        function changeBullet6()
+        {
+            document.getElementById("bullet6").src="arrow.png"
+            document.getElementById("myP15").style.textDecoration = "underline";
+            document.getElementById("myP16").style.textDecoration = "underline";
+            document.getElementById("myP17").style.textDecoration = "underline";
+        }
+        function changeBulletBack6()
+        {
+            document.getElementById("bullet6").src="bullet.png"
+            document.getElementById("myP15").style.textDecoration = "none";
+            document.getElementById("myP16").style.textDecoration = "none";
+            document.getElementById("myP17").style.textDecoration = "none";
+        }
+
+        function changeBullet7()
+        {
+            document.getElementById("bullet7").src="arrow.png"
+            document.getElementById("myP18").style.textDecoration = "underline";
+            document.getElementById("myP19").style.textDecoration = "underline";
+            document.getElementById("myP20").style.textDecoration = "underline";
+        }
+        function changeBulletBack7()
+        {
+            document.getElementById("bullet7").src="bullet.png"
+            document.getElementById("myP18").style.textDecoration = "none";
+            document.getElementById("myP19").style.textDecoration = "none";
+            document.getElementById("myP20").style.textDecoration = "none";
+        }
+
+        function changeBullet8()
+        {
+            document.getElementById("bullet8").src="arrow.png"
+            document.getElementById("myP21").style.textDecoration = "underline";
+            document.getElementById("myP22").style.textDecoration = "underline";
+            document.getElementById("myP23").style.textDecoration = "underline";
+        }
+        function changeBulletBack8()
+        {
+            document.getElementById("bullet8").src="bullet.png"
+            document.getElementById("myP21").style.textDecoration = "none";
+            document.getElementById("myP22").style.textDecoration = "none";
+            document.getElementById("myP23").style.textDecoration = "none";
+        }
+
+        function changeBullet9()
+        {
+            document.getElementById("bullet9").src="arrow.png"
+            document.getElementById("myP24").style.textDecoration = "underline";
+            document.getElementById("myP25").style.textDecoration = "underline";
+            document.getElementById("myP26").style.textDecoration = "underline";
+        }
+        function changeBulletBack9()
+        {
+            document.getElementById("bullet9").src="bullet.png"
+            document.getElementById("myP24").style.textDecoration = "none";
+            document.getElementById("myP25").style.textDecoration = "none";
+            document.getElementById("myP26").style.textDecoration = "none";
+        }
+
+        function changeBullet10()
+        {
+            document.getElementById("bullet10").src="arrow.png"
+            document.getElementById("myP27").style.textDecoration = "underline";
+            document.getElementById("myP28").style.textDecoration = "underline";
+            document.getElementById("myP29").style.textDecoration = "underline";
+        }
+        function changeBulletBack10()
+        {
+            document.getElementById("bullet10").src="bullet.png"
+            document.getElementById("myP27").style.textDecoration = "none";
+            document.getElementById("myP28").style.textDecoration = "none";
+            document.getElementById("myP29").style.textDecoration = "none";
+        }
+
+        function changeBullet11()
+        {
+            document.getElementById("bullet11").src="arrow.png"
+            document.getElementById("myP30").style.textDecoration = "underline";
+            document.getElementById("myP31").style.textDecoration = "underline";
+            document.getElementById("myP32").style.textDecoration = "underline";
+        }
+        function changeBulletBack11()
+        {
+            document.getElementById("bullet11").src="bullet.png"
+            document.getElementById("myP30").style.textDecoration = "none";
+            document.getElementById("myP31").style.textDecoration = "none";
+            document.getElementById("myP32").style.textDecoration = "none";
+        }
+
+        function changeBullet12()
+        {
+            document.getElementById("bullet12").src="arrow.png"
+            document.getElementById("myP33").style.textDecoration = "underline";
+            document.getElementById("myP34").style.textDecoration = "underline";
+            document.getElementById("myP35").style.textDecoration = "underline";
+        }
+        function changeBulletBack12()
+        {
+            document.getElementById("bullet12").src="bullet.png"
+            document.getElementById("myP33").style.textDecoration = "none";
+            document.getElementById("myP34").style.textDecoration = "none";
+            document.getElementById("myP35").style.textDecoration = "none";
+        }
+
+        function changeBullet13()
+        {
+            document.getElementById("bullet13").src="arrow.png"
+            document.getElementById("myP36").style.textDecoration = "underline";
+            document.getElementById("myP37").style.textDecoration = "underline";
+            document.getElementById("myP38").style.textDecoration = "underline";
+        }
+        function changeBulletBack13()
+        {
+            document.getElementById("bullet13").src="bullet.png"
+            document.getElementById("myP36").style.textDecoration = "none";
+            document.getElementById("myP37").style.textDecoration = "none";
+            document.getElementById("myP38").style.textDecoration = "none";
+        }
+
+        function changeBullet14()
+        {
+            document.getElementById("bullet14").src="arrow.png"
+            document.getElementById("myP39").style.textDecoration = "underline";
+            document.getElementById("myP40").style.textDecoration = "underline";
+            document.getElementById("myP41").style.textDecoration = "underline";
+        }
+        function changeBulletBack14()
+        {
+            document.getElementById("bullet14").src="arrow.png"
+            document.getElementById("myP39").style.textDecoration = "none";
+            document.getElementById("myP40").style.textDecoration = "none";
+            document.getElementById("myP41").style.textDecoration = "none";
+        }
+
+        function changeBullet15()
+        {
+            document.getElementById("bullet15").src="arrow.png"
+            document.getElementById("myP42").style.textDecoration = "underline";
+            document.getElementById("myP43").style.textDecoration = "underline";
+            document.getElementById("myP44").style.textDecoration = "underline";
+        }
+        function changeBulletBack15()
+        {
+            document.getElementById("bullet15").src="bullet.png"
+            document.getElementById("myP42").style.textDecoration = "none";
+            document.getElementById("myP43").style.textDecoration = "none";
+            document.getElementById("myP44").style.textDecoration = "none";
+        }
+
+        function changeBullet16()
+        {
+            document.getElementById("bullet16").src="arrow.png"
+            document.getElementById("myP45").style.textDecoration = "underline";
+            document.getElementById("myP46").style.textDecoration = "underline";
+            document.getElementById("myP47").style.textDecoration = "underline";
+        }
+        function changeBulletBack16()
+        {
+            document.getElementById("bullet16").src="bullet.png"
+            document.getElementById("myP45").style.textDecoration = "none";
+            document.getElementById("myP46").style.textDecoration = "none";
+            document.getElementById("myP47").style.textDecoration = "none";
+        }
+
+        function changeBullet17()
+        {
+            document.getElementById("bullet17").src="arrow.png"
+            document.getElementById("myP48").style.textDecoration = "underline";
+            document.getElementById("myP49").style.textDecoration = "underline";
+            document.getElementById("myP50").style.textDecoration = "underline";
+            document.getElementById("myP51").style.textDecoration = "underline";
+        }
+        function changeBulletBack17()
+        {
+            document.getElementById("bullet17").src="bullet.png"
+            document.getElementById("myP48").style.textDecoration = "none";
+            document.getElementById("myP49").style.textDecoration = "none";
+            document.getElementById("myP50").style.textDecoration = "none";
+            document.getElementById("myP51").style.textDecoration = "none";
+        }
+
+        function changeBullet18()
+        {
+            document.getElementById("bullet18").src="arrow.png"
+            document.getElementById("myP52").style.textDecoration = "underline";
+            document.getElementById("myP53").style.textDecoration = "underline";
+            document.getElementById("myP54").style.textDecoration = "underline";
+        }
+        function changeBulletBack18()
+        {
+            document.getElementById("bullet18").src="bullet.png"
+            document.getElementById("myP52").style.textDecoration = "none";
+            document.getElementById("myP53").style.textDecoration = "none";
+            document.getElementById("myP54").style.textDecoration = "none";
+        }
+
+        function changeBullet19()
+        {
+            document.getElementById("bullet19").src="arrow.png"
+            document.getElementById("myP55").style.textDecoration = "underline";
+            document.getElementById("myP56").style.textDecoration = "underline";
+            document.getElementById("myP57").style.textDecoration = "underline";
+        }
+        function changeBulletBack19()
+        {
+            document.getElementById("bullet19").src="bullet.png"
+            document.getElementById("myP55").style.textDecoration = "none";
+            document.getElementById("myP56").style.textDecoration = "none";
+            document.getElementById("myP57").style.textDecoration = "none";
+        }
+
+        function changeBullet20()
+        {
+            document.getElementById("bullet20").src="arrow.png"
+            document.getElementById("myP58").style.textDecoration = "underline";
+            document.getElementById("myP59").style.textDecoration = "underline";
+            document.getElementById("myP60").style.textDecoration = "underline";
+        }
+        function changeBulletBack20()
+        {
+            document.getElementById("bullet20").src="bullet.png"
+            document.getElementById("myP58").style.textDecoration = "none";
+            document.getElementById("myP59").style.textDecoration = "none";
+            document.getElementById("myP60").style.textDecoration = "none";
+        }
+
+        function changeBullet21()
+        {
+            document.getElementById("bullet21").src="arrow.png"
+            document.getElementById("myP61").style.textDecoration = "underline";
+            document.getElementById("myP62").style.textDecoration = "underline";
+            document.getElementById("myP63").style.textDecoration = "underline";
+        }
+        function changeBulletBack21()
+        {
+            document.getElementById("bullet21").src="bullet.png"
+            document.getElementById("myP61").style.textDecoration = "none";
+            document.getElementById("myP62").style.textDecoration = "none";
+            document.getElementById("myP63").style.textDecoration = "none";
+        }
+
+        function changeBullet22()
+        {
+            document.getElementById("bullet22").src="arrow.png"
+            document.getElementById("myP64").style.textDecoration = "underline";
+            document.getElementById("myP65").style.textDecoration = "underline";
+            document.getElementById("myP66").style.textDecoration = "underline";
+        }
+        function changeBulletBack22()
+        {
+            document.getElementById("bullet22").src="bullet.png"
+            document.getElementById("myP64").style.textDecoration = "none";
+            document.getElementById("myP65").style.textDecoration = "none";
+            document.getElementById("myP66").style.textDecoration = "none";
+        }
+
+        function changeBullet23()
+        {
+            document.getElementById("bullet23").src="arrow.png"
+            document.getElementById("myP67").style.textDecoration = "underline";
+            document.getElementById("myP68").style.textDecoration = "underline";
+            document.getElementById("myP69").style.textDecoration = "underline";
+        }
+        function changeBulletBack23()
+        {
+            document.getElementById("bullet23").src="bullet.png"
+            document.getElementById("myP67").style.textDecoration = "none";
+            document.getElementById("myP68").style.textDecoration = "none";
+            document.getElementById("myP69").style.textDecoration = "none";
+        }
+
+        function changeBullet24()
+        {
+            document.getElementById("bullet24").src="arrow.png"
+            document.getElementById("myP70").style.textDecoration = "underline";
+            document.getElementById("myP71").style.textDecoration = "underline";
+            document.getElementById("myP72").style.textDecoration = "underline";
+        }
+        function changeBulletBack24()
+        {
+            document.getElementById("bullet24").src="bullet.png"
+            document.getElementById("myP70").style.textDecoration = "none";
+            document.getElementById("myP71").style.textDecoration = "none";
+            document.getElementById("myP72").style.textDecoration = "none";
+        }
+
+        function changeBullet25()
+        {
+            document.getElementById("bullet25").src="arrow.png"
+            document.getElementById("myP73").style.textDecoration = "underline";
+            document.getElementById("myP74").style.textDecoration = "underline";
+            document.getElementById("myP75").style.textDecoration = "underline";
+        }
+        function changeBulletBack25()
+        {
+            document.getElementById("bullet25").src="bullet.png"
+            document.getElementById("myP73").style.textDecoration = "none";
+            document.getElementById("myP74").style.textDecoration = "none";
+            document.getElementById("myP75").style.textDecoration = "none";
+        }
+
+        function changeBullet26()
+        {
+            document.getElementById("bullet25").src="arrow.png"
+            document.getElementById("myP76").style.textDecoration = "underline";
+            document.getElementById("myP77").style.textDecoration = "underline";
+            document.getElementById("myP78").style.textDecoration = "underline";
+        }
+        function changeBulletBack26()
+        {
+            document.getElementById("bullet25").src="bullet.png"
+            document.getElementById("myP76").style.textDecoration = "none";
+            document.getElementById("myP77").style.textDecoration = "none";
+            document.getElementById("myP78").style.textDecoration = "none";
+        }
+    </script>
+
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <img src="bearDayBear.png" id="bearDayPic" align="middle">
+        <h2 class="text-center">Bear Day Spring 2016</h2>
+    </div>
+</div>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">2016 Schedule</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="information.html">Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div id="wrapper">
+    <h1>
+        <div class="ribbon">
+            <span class="top"></span>
+            </span>
+            <figcaption>A</figcaption>
+            </figure>
+        </div>
+    </h1>
+
+    <figure class="letter-wrapper">
+		<span class="letter b">
+					<span class="bottom"></span>
+		<span class="middle"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>B</figcaption>
+    </figure>
+
+    <figure class="letter-wrapper">
+		<span class="letter e">
+					<span class="bottom"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>E</figcaption>
+    </figure>
+
+    <figure class="letter-wrapper">
+		<span class="letter a">
+					<span class="bottom"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>A</figcaption>
+    </figure>
+
+    <figure class="letter-wrapper">
+		<span class="letter r">
+					<span class="bottom"></span>
+		<span class="middle"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>R</figcaption>
+    </figure>
+
+    <figure class="letter-wrapper">
+		<span class="letter d">
+					<span class="bottom"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>D</figcaption>
+    </figure>
+
+    <figure class="letter-wrapper">
+		<span class="letter a">
+					<span class="bottom"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>A</figcaption>
+    </figure>
+
+    <figure class="letter-wrapper">
+		<span class="letter y">
+					<span class="bottom"></span>
+		<span class="top"></span>
+		</span>
+        <figcaption>Y</figcaption>
+    </figure>
+
+</div>
+
+<div id="first">
+    <h3 class="myHead"> Thursday, April 7, 2016 </h3>
+    <div class="myDiv" onmouseover="changeBullet1()" onmouseout="changeBulletBack1()">
+        <p id="myP" class="afterLine">Plunket Gallery Art Exhibition</p>
+        <img id="bullet1" src="bullet.png" alt="bullet">
+        <p id="myP1" class="line">Harman Art Building</p>
+        <p id="myP2" class="afterLine">4:30PM - 5:30PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet2()" onmouseout="changeBulletBack2()">
+        <p id="myP3" class="afterLine">Heritage Hall: General Poster Session 1</p>
+        <img id="bullet2" src="bullet.png" alt="bullet">
+        <p id="myP4" class="line">University Center</p>
+        <p id="myP5" class="afterLine">4:30PM - 5:30PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet3()" onmouseout="changeBulletBack3()">
+        <p id="myP6" class="afterLine">Heritage Hall: General Poster Session 2</p>
+        <img id="bullet3" src="bullet.png" alt="bullet">
+        <p id="myP7" class="line">University Center</p>
+        <p id="myP8" class="afterLine">5:30PM - 6:30PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet4()" onmouseout="changeBulletBack4()">
+        <p id="myP9" class="afterLine">PDR: BEAR Day Keynote, Dr. VanLandingham</p>
+        <img id="bullet4" src="bullet.png" alt="bullet">
+        <p id="myP10" class="line">University Center</p>
+        <p id="myP11" class="afterLine">7:30PM</p>
+    </div>
+
+    <h3 class="myHead"> Friday, April 8, 2016 </h3>
+    <div class="myDiv" onmouseover="changeBullet5()" onmouseout="changeBulletBack5()">
+        <p id="myP12" class="afterLine">Plunket Gallery Art Exhibition</p>
+        <img id="bullet5" src="bullet.png" alt="bullet">
+        <p id="myP13" class="line">Harman Art Building</p>
+        <p id="myP14" class="afterLine">9:00AM - 9:30AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet6()" onmouseout="changeBulletBack6()">
+        <p id="myP15" class="afterLine">Freshman Design Competition</p>
+        <img id="bullet6" src="bullet.png" alt="bullet">
+        <p id="myP16" class="line">Harman Art Building</p>
+        <p id="myP17" class="afterLine">9:00AM - 11:00AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet7()" onmouseout="changeBulletBack7()">
+        <p id="myP18" class="afterLine">Heritage Hall: General Posters Available for Review</p>
+        <img id="bullet7" src="bullet.png" alt="bullet">
+        <p id="myP19" class="line">University Center</p>
+        <p id="myP20" class="afterLine">9:00AM - 3:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet8()" onmouseout="changeBulletBack8()">
+        <p id="myP21" class="afterLine">General Poster Session 1</p>
+        <img id="bullet8" src="bullet.png" alt="bullet">
+        <p id="myP22" class="line">University Center</p>
+        <p id="myP23" class="afterLine">9:00AM - 10:00AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet9()" onmouseout="changeBulletBack9()">
+        <p id="myP24" class="afterLine">General Poster Session 1</p>
+        <img id="bullet9" src="bullet.png" alt="bullet">
+        <p id="myP25" class="line">Stetson Hall</p>
+        <p id="myP26" class="afterLine">9:00AM - 10:00AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet10()" onmouseout="changeBulletBack10()">
+        <p id="myP27" class="afterLine">Brass Choir Performance</p>
+        <img id="bullet10" src="bullet.png" alt="bullet">
+        <p id="myP28" class="line">Fickling Hall</p>
+        <p id="myP29" class="afterLine">10:00AM - 10:30AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet11()" onmouseout="changeBulletBack11()">
+        <p id="myP30" class="afterLine">General Poster Session 2</p>
+        <img id="bullet11" src="bullet.png" alt="bullet">
+        <p id="myP31" class="line">Knight Hall</p>
+        <p id="myP32" class="afterLine">10:00AM - 11:00AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet12()" onmouseout="changeBulletBack12()">
+        <p id="myP33" class="afterLine">General Poster Session 2</p>
+        <img id="bullet12" src="bullet.png" alt="bullet">
+        <p id="myP34" class="line">Stetson Hall</p>
+        <p id="myP35" class="afterLine">10:00AM - 11:00AM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet13()" onmouseout="changeBulletBack13()">
+        <p id="myP36" class="afterLine">General Poster Session 3</p>
+        <img id="bullet13" src="bullet.png" alt="bullet">
+        <p id="myP37" class="line">Fickling Hall</p>
+        <p id="myP38" class="afterLine">11:00AM - 12:30PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet14()" onmouseout="changeBulletBack14()">
+        <p id="myP39" class="afterLine">General Poster Session 3</p>
+        <img id="bullet14" src="bullet.png" alt="bullet">
+        <p id="myP40" class="line">Knight Hall</p>
+        <p id="myP41" class="afterLine">11:00AM - 12:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet15()" onmouseout="changeBulletBack15()">
+        <p id="myP42" class="afterLine">General Poster Session 3</p>
+        <img id="bullet15" src="bullet.png" alt="bullet">
+        <p id="myP43" class="line">Stetson Hall</p>
+        <p id="myP44" class="afterLine">11:00AM - 12:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet16()" onmouseout="changeBulletBack16()">
+        <p id="myP45" class="afterLine">Expo Keynote: Dr. S. Riley</p>
+        <img id="bullet16" src="bullet.png" alt="bullet">
+        <p id="myP46" class="line">SEB Auditorium</p>
+        <p id="myP47" class="afterLine">11:00AM - 12:30PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet17()" onmouseout="changeBulletBack17()">
+        <p id="myP48" class="afterLine">Lunch on Historic Quad</p>
+        <img id="bullet17" src="bullet.png" alt="bullet">
+        <p id="myP49" class="line">Mercer Jazz Quartet - Noon to 1:30PM</p>
+        <p id="myP50" class="line">Med School Quad</p>
+        <p id="myP51" class="afterLine">11:00AM - 2:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet18()" onmouseout="changeBulletBack18()">
+        <p id="myP52" class="afterLine">General Paper Session 4</p>
+        <img id="bullet18" src="bullet.png" alt="bullet">
+        <p id="myP53" class="line">McCorkele Music Building</p>
+        <p id="myP54" class="afterLine">1:00PM - 2:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet19()" onmouseout="changeBulletBack19()">
+        <p id="myP55" class="afterLine">General Paper Session 4</p>
+        <img id="bullet19" src="bullet.png" alt="bullet">
+        <p id="myP56" class="line">McCorkele Music Building</p>
+        <p id="myP57" class="afterLine">1:00PM - 2:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet20()" onmouseout="changeBulletBack20()">
+        <p id="myP58" class="afterLine">General Paper Session 4</p>
+        <img id="bullet20" src="bullet.png" alt="bullet">
+        <p id="myP59" class="line">Stetson Hall</p>
+        <p id="myP60" class="afterLine">1:00PM - 2:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet21()" onmouseout="changeBulletBack21()">
+        <p id="myP61" class="afterLine">Posters of <Senior></Senior>Design, Honors, Research</p>
+        <img id="bullet21" src="bullet.png" alt="bullet">
+        <p id="myP62" class="line">SEB</p>
+        <p id="myP63" class="afterLine">1:00PM - 3:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet22()" onmouseout="changeBulletBack22()">
+        <p id="myP64" class="afterLine">General Paper Session 5</p>
+        <img id="bullet22" src="bullet.png" alt="bullet">
+        <p id="myP65" class="line">Knight Hall</p>
+        <p id="myP66" class="afterLine">1:00PM - 2:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet23()" onmouseout="changeBulletBack23()">
+        <p id="myP67" class="afterLine">General Paper Session 5</p>
+        <img id="bullet23" src="bullet.png" alt="bullet">
+        <p id="myP68" class="line">Stetson Hall</p>
+        <p id="myP69" class="afterLine">1:00PM - 2:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet24()" onmouseout="changeBulletBack24()">
+        <p id="myP70" class="afterLine">University Honors Convocation</p>
+        <img id="bullet24" src="bullet.png" alt="bullet">
+        <p id="myP71" class="line">Willingham Hall</p>
+        <p id="myP72" class="afterLine">4:00PM - 5:00PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet25()" onmouseout="changeBulletBack25()">
+        <p id="myP73" class="afterLine">Senior Art Show Reception</p>
+        <img id="bullet25" src="bullet.png" alt="bullet">
+        <p id="myP74" class="line">567 Center</p>
+        <p id="myP75" class="afterLine">6:00PM - 8:30PM</p>
+    </div>
+
+    <div class="myDiv" onmouseover="changeBullet26()" onmouseout="changeBulletBack26()">
+        <p id="myP76" class="afterLine">Dulcimer's Annual Release Party</p>
+        <img id="bullet26" src="bullet.png" alt="bullet">
+        <p id="myP77" class="line">Penfield Hall</p>
+        <p id="myP78" class="afterLine">6:00PM - 8:30PM</p>
+    </div>
+</div>
+</body>
+</html>

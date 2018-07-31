@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo Collage</title>
+</head>
+<body>
+
+<script>
+function randRange(low, high)
+{
+	return Math.floor((Math.random() * (high-low+1)) + low);
+}
+</script>
+
+<script>
+    var Cars = ["maserati.jpg", "nsx.jpg", "Porsche918.jpg", "Aventador.jpg", "LaFerrari.jpg", "AmgSLS.jpg", "AgeraR.jpg", "Huayra.jpg", "AmgGts.jpg", "458Italia.jpg", "p1.jpg", "veneno.jpg", "bugatti.jpg"];
+    var count = prompt("How many pictures do you want to be displayed?");
+    
+    for (i = 0; i < count; i++)
+    {
+        document.writeln("<img src='" + Cars[i%Cars.length] +"' alt='a car' width='" + randRange(250, 280) + "' height='" + randRange(300, 350) + "'>");
+    }
+</script>
+
+</body>
+</html>
